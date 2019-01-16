@@ -1,8 +1,3 @@
-<!-- Denim - #1560bd
-     French blue - 0072bb 
-
-  -->
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,8 +19,8 @@
 
 		#navbar {
 		  overflow: hidden;
-		  background-color: #1560bd;
-		  padding: 30px 10px;
+		  background-color: #333;
+		  padding: 30px 0px;
 		  transition: 0.25s;
 		  position: fixed;
 		  width: 100%;
@@ -47,12 +42,12 @@
 		#navbar #logo {
 		  font-size: 35px;
 		  font-weight: bold;
-		  /*transition: 0.4s;*/
+		  transition: 0.4s;
 		}
 
 		#navbar a:hover {
-		  /*background-color: #ddd;*/
-		  /*color: black;*/
+		  background-color: #ddd;
+		  color: black;
 		}
 
 		#navbar a.active {
@@ -66,7 +61,7 @@
 
 		@media screen and (max-width: 580px) {
 		  #navbar {
-		    padding: 20px 10px !important;
+		    padding: 20px 0px !important;
 		  }
 		  #navbar a {
 		    float: none;
@@ -81,6 +76,9 @@
 		.topnav {
 		  overflow: hidden;
 		  background-color: #333;
+		  position: fixed;
+		  z-index: 99;
+		  width: 100%;
 		}
 
 		.topnav a {
@@ -168,52 +166,12 @@
 			color: white;
 
 		}
-		.row .col-lg-3 .DadStyle, .DadStyle {
-			padding-top: 20px;
-			padding-bottom: 20px; 
-			transition: 0.25ss;
-			background-color: white;
-			color: #333;
-			border-top: 10px solid #0d3d78 ;
-		}
-		.row .col-lg-3 .DadStyle:hover {
-			box-shadow: 1px 1px 20px 5px #0072bb ;
-			border:1px solid #c8c8c8;
-			cursor: pointer;
-			transition: 0.25s;
-		}
-		.row .col-lg-4 .DadStyle {	
-			padding: 20px 20px;
-		}		
-		.row .col-lg-4 .DadStyle {
-			/*color: #1560bd;*/
-		}
-		.row .col-lg-4 .DadStyle img {
-			padding-bottom: 10px;
-			text-align: justify;
-		}
-		.row .col-lg-4 .DadStyle:hover {
-			box-shadow: 1px 1px 20px 5px #1560bd ;
-			border:1px solid #c8c8c8;
-			cursor: pointer;
-			transition: 0.25s;
-		}
-		.row .col-lg-6 .DadStyle:hover {
-			box-shadow: 1px 1px 20px 5px #0072bb ;
-			border:1px solid #c8c8c8;
-			cursor: pointer;
-			transition: 0.25s;
-		}
-		.span_class {
-			font-size: 20px;
-			color: #1560bd;
-		}
 	</style>
 </head>
 <body>
 
-<div id="navbar">
-  <a href="#default" style="padding: 0;"><img src="images/logo.png" width="100" height="60"></a>
+<!-- <div id="navbar">
+  <a href="#default" id="logo">fabRelax</a>
   <div id="navbar-right">
     <a href="#home">Home</a>    
     <a href="#about">About us</a>
@@ -237,21 +195,21 @@ function scrollFunction() {
     document.getElementById("logo").style.fontSize = "30px";
   }
 }
-</script>
+</script> -->
 
-<!-- <div class="topnav" id="myTopnav">
-  <a href="#home" class="active">Home</a>
-  <a href="#news">Know fabRelax</a>
-  <a href="#contact">Buy Now</a>// dropdown
-  <a href="#about">Blog</a>
-  <a href="#about">Feedback</a>
-  <a href="#about">Team</a>
+<div class="topnav" id="myTopnav">
+  <a href="#about" style="float: right;">Team</a>
+  <a href="#about" style="float: right;">Feedback</a>
+  <a href="#about" style="float: right;">Blog</a>
+  <a href="#contact" style="float: right;">Buy Now</a>// dropdown
+  <a href="#news" style="float: right;">Know fabRelax</a>
+  <a href="#home" style="float: right;">Home</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
-</div> -->
+</div>
 
-<!-- <script>
+<script>
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -260,9 +218,7 @@ function myFunction() {
     x.className = "topnav";
   }
 }
-</script> -->
-
-<br><br><br><br><br>
+</script>
 
 <div class="container" style="width: 100%;margin:0px;padding:0px;">
   <!-- <h2>Carousel Example</h2> -->
@@ -278,23 +234,27 @@ function myFunction() {
     <div class="carousel-inner">
 
       <div class="item active">
-        <img src="images/banner1.png" alt="Los Angeles" style="width:100%;height: 600px">
+        <img src="images/1.jpg" alt="Los Angeles" style="width:100%;height: 80%;">
+        <div class="carousel-caption">
+          <h3>First Image</h3>
+          <p>Some random text</p>
+        </div>
       </div>
 
       <div class="item">
-        <img src="images/banner2.png" alt="Chicago" style="width:100%;height: 600px;">
-       <!--  <div class="carousel-caption">
+        <img src="images/a2.jpg" alt="Chicago" style="width:100%;height: 80%;">
+        <div class="carousel-caption">
           <h3>Second Image</h3>
           <p>Some random text</p>
-        </div> -->
+        </div>
       </div>
     
       <div class="item">
-        <img src="images/banner3.png" alt="New York" style="width:100%;height: 600px;">
-        <!-- <div class="carousel-caption">
+        <img src="images/2.jpg" alt="New York" style="width:100%;height: 80%;">
+        <div class="carousel-caption">
           <h3>Third Image</h3>
           <p>Some random text</p>
-        </div> -->
+        </div>
       </div>
   
     </div>
@@ -326,79 +286,8 @@ function myFunction() {
 	</div>
 </div> -->
 
+
 <div class="container-fluid"  style="text-align: center; font-size: 30px ">
-	<div style="padding: 25px;font-family: sans-serif;font-size: 45px;">
-		Current Scenario
-	</div>
-
-	<div class="row">
-		<div class="col-lg-4" style="padding: 30px;">
-			<div class="DadStyle">
-				<img src="images/howTo3a.png" width="350" height="350">
-			<br>
-			Athletes<br>
-			<span class="span_class">
-				After a heavy worout muscles wear-out due to cramps and need immediate attention.
-			</span>
-			</div>
-		</div>
-		<div class="col-lg-4" style="padding: 30px;">
-			<div class="DadStyle">
-				<img src="images/ep.png" style="border-radius: 50%;" width="350" height="350">
-				<br>
-			Elder people<br>
-			<span class="span_class">
-				With age our muscle begin to loose efficiency and also require regular attention to it.
-			</span>
-			</div>
-		</div>
-		<div class="col-lg-4" style="padding: 30px;">
-			<div class="DadStyle">
-				<img src="images/t1.png" style="border-radius: 50%;" width="350" height="350">
-				<br>
-			Frequent Travellers<br>
-			<span class="span_class">
-				With age our muscle begin to loose efficiency and also require regular attention to it.
-			</span>
-			</div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-lg-4" style="padding: 30px;">
-			<div class="DadStyle">
-				<img src="images/pw1.png" style="border-radius: 50%;" width="350" height="350">
-			<br>
-			Pregnant Women<br>
-			<span class="span_class">
-				During this times, ladies often encounter leg pain.
-			</span>
-			</div>
-		</div>
-		<div class="col-lg-4" style="padding: 30px;">
-			<div class="DadStyle">
-				<img src="images/hw1.png" style="border-radius: 50%;" width="350" height="350">
-			<br>
-			House-wifes<br>
-			<span class="span_class">
-				Whole day work credit them only with undemended pain.
-			</span>
-			</div>
-		</div>
-		<div class="col-lg-4" style="padding: 30px;">
-			<div class="DadStyle">
-				<img src="images/prof.png" style="border-radius: 50%;" width="350" height="350">
-			<br>
-			Professors<br>
-			<span class="span_class">
-				It's very common to see people adopting unhealthy working lifestyle.
-			</span>
-			</div>
-		</div>
-	</div>
-	
-</div>
-
-<!-- <div class="container-fluid"  style="text-align: center; font-size: 30px ">
 	<div style="padding: 25px;font-family: sans-serif;font-size: 45px;">
 		Current Scenario 1	</div>
 
@@ -451,9 +340,9 @@ function myFunction() {
 		</div>
 	</div>
 	
-</div> -->
+</div>
 
-<!-- <div class="div_style1">
+<div class="div_style1">
 	<div style="padding: 25px;font-family: sans-serif;font-size: 45px;">
 		Current Scenario 2
 	</div>
@@ -462,7 +351,8 @@ function myFunction() {
 		<img src="images/i.jpg" alt="Avatar" width="100%">
 	  	<div id="container">
 	  		Incredibles 2
-	   
+	    <!-- <h4><b>Jane Doe</b></h4> 
+	    <p>Interior Designer</p>  -->
 	  </div>
 	</div>
 
@@ -470,7 +360,8 @@ function myFunction() {
 		<img src="images/i.jpg" alt="Avatar" width="100%">
 	  	<div id="container">
 	  		Incredibles 2
-
+	    <!-- <h4><b>Jane Doe</b></h4> 
+	    <p>Interior Designer</p> --> 
 	  </div>
 	</div>
 
@@ -478,7 +369,8 @@ function myFunction() {
 		<img src="images/i.jpg" width="100%" alt="Avatar">
 	  	<div id="container">
 	  		Incredibles 2
-
+	    <!-- <h4><b>Jane Doe</b></h4> 
+	    <p>Interior Designer</p>  -->
 	  </div>
 	</div>
 	<br><br>
@@ -486,53 +378,26 @@ function myFunction() {
 		<img src="images/i.jpg" width="100%" alt="Avatar">
 	  	<div id="container">
 	  		Incredibles 2
-
+	    <!-- <h4><b>Jane Doe</b></h4> 
+	    <p>Interior Designer</p>  -->
 	  </div>
 	</div>
 	<div class="card_new">
 		<img src="images/i.jpg" width="100%" alt="Avatar">
 	  	<div id="container">
 	  		Incredibles 2
-
+	    <!-- <h4><b>Jane Doe</b></h4> 
+	    <p>Interior Designer</p>  -->
 	  </div>
 	</div>
 
+</div>
 
-</div> -->
+
 
 <div class="container-fluid"  style="text-align: center; font-size: 30px ">
 	<div style="padding: 25px;font-family: sans-serif;font-size: 45px;">
-		WHY fabRelax?
-	</div>
-
-	<div class="row">
-		<div class="col-lg-3" style="padding: 20px">
-			<div class="DadStyle">
-				Wearable as Garment
-
-			</div>
-		</div>
-		<div class="col-lg-3" style="padding: 20px;">
-			<div class="DadStyle">
-				Breathable, Lightweight <br>&amp; Comfortable
-			</div>
-		</div>
-		<div class="col-lg-3" style="padding: 20px;">
-			<div class="DadStyle">
-				Affordable
-			</div>
-		</div>
-		<div class="col-lg-3" style="padding: 20px;">
-			<div class="DadStyle">
-				Clinically Proven
-			</div>
-		</div>		
-	</div>
-</div>
-
-<!-- <div class="container-fluid"  style="text-align: center; font-size: 30px ">
-	<div style="padding: 25px;font-family: sans-serif;font-size: 45px;">
-		WHY fabRelax?
+		WHY fab Relax?
 	</div>
 
 	<div class="row">
@@ -558,17 +423,17 @@ function myFunction() {
 		</div>
 	</div>
 	
-</div> -->
+</div>
 
-<div class="container-fluid"  style="text-align: center; font-size: 30px;background-color: #1560bd ;color: white">
-	<div style="padding: 35px;font-family: Segoe UI;font-size: 45px;">
-		INTRODUCTION
+<div class="container-fluid"  style="text-align: center; font-size: 30px;background-color: #333;color: white">
+	<div style="padding: 35px;font-family: sans-serif;font-size: 45px;">
+		Fab-Relax Introduction
 	</div>
 	<div class="row">
-		<div class="col-lg-6" style="padding: 30px 0px 70px 70px;">
+		<div class="col-lg-6" style="padding: 30px 10px 70px 10px;">
 			
 			<!-- <video src="video/middle.mp4" width="80%" height="400px show controls"></video> -->
-			<video width="90%" height="500px" controls poster="images/poster.png">
+			<video width="80%" height="400px" controls>
 			  <source src="video/middle1.mp4" type="video/mp4">
 			</video>
 			<!-- <iframe width="80%" height="400px" src="video/middle.jpg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
@@ -577,13 +442,12 @@ function myFunction() {
 
 		</div>
 
-		<div class="col-lg-6" style="padding: 30px 80px 70px 0px;font-size: 25px;">
+		<div class="col-lg-6" style="padding: 30px 80px 70px 10px;font-size: 20px;">
 			<br><br>
-			FAB RELAX<BR>
 			UNDERSTAND BEFORE ITS TOO LATE
 			<br>There is an urgent need to have appropirate knowledge to understand the value of LEG PAIN unless its TOO LATE.
 			<br><br> ( There are complication that arises due to lef pain at later stage leaves no U-turn. )
-			<br>
+			<br><br>
 			Consider taking daily pain seriously, for your and your loved ones well being ONLY!!
 
 		</div>		
@@ -598,34 +462,26 @@ function myFunction() {
 	</div>
 
 	<div class="row">
-		<div class="col-lg-4" style="padding: 30px;">
-			<div class="DadStyle">
-				<img src="images/howTo1a.png" width="300" height="350">
-				<br>
-				Wrap around sleeve
-				<br><br>
-			</div>
+		<div class="col-lg-4" style="background-color: pink; padding: 30px 10px 30px 10px;">
+			<img src="images/pw1.jpg" style="border-radius: 50%;" width="150" height="150">
+			<br>
+			Wrap around sleeve
 		</div>
-		<div class="col-lg-4" style="padding: 30px;">
-			<div class="DadStyle">
-				<img src="images/howTo2a.png" width="350" height="350">
-				<br>
-				Turn the button <br>as per your comfort
-				<br><br>
-			</div>
+		<div class="col-lg-4" style="background-color: lightgreen; padding: 30px 10px 30px 10px;">
+			<img src="images/hw.jpg" style="border-radius: 50%;" width="150" height="150">
+			<br>
+			Turn the button as per your comfort
 		</div>
-		<div class="col-lg-4" style="padding: 30px;">
-			<div class="DadStyle">
-				<img src="images/howTo3a.png" width="300" height="350">
-				<br>
-				Enjoy it!
-				<br><br>
-			</div>
+		<div class="col-lg-4" style="background-color: yellow; padding: 30px 10px 30px 10px;">
+			<img src="images/p1.jpg" style="border-radius: 50%;" width="150" height="150">
+			<br>
+			Enjoy it!
 		</div>
 	</div>
+	
 </div>
 
-<!-- <div class="container-fluid"  style="text-align: center; font-size: 30px;width: 100%;padding:0px;background-color: #e8e8e8">
+<div class="container-fluid"  style="text-align: center; font-size: 30px;width: 100%;padding:0px;background-color: #e8e8e8">
 	<div style="padding: 25px;font-family: sans-serif;font-size: 45px;">
 		WHERE CAN YOU USE ?
 	</div>
@@ -647,65 +503,48 @@ function myFunction() {
 			<br>
 			Watching Movies
 		</div>
+		<!-- <div class="col-lg-3" style="background-color: lightblue; padding: 30px 10px 30px 10px;">
+			<img src="images/p1.jpg" style="border-radius: 50%;" width="150" height="150">
+			<br>
+			Chatting with <br>loved ones
+		</div> -->
 	</div>
 
 	<div style="padding: 15px;font-family: sans-serif;font-size: 25px;">
 		Practically Whenever the situation demands and one is O.K. with environment. like metro , working with desk and chair, while resting,  while watching movies, or walking and chatting with your loved ones.
 	</div>
 	
-</div> -->
+</div>
 
 <br>
 
-<div class="container-fluid"  style="text-align: center; font-size: 30px;background-color:#0072bb; color: white;">
+<div class="container-fluid"  style="text-align: center; font-size: 30px;">
+	<!-- <div>
+		<img src="images/chat1.jpg" style="opacity: 0.5;position: absolute; left:0px;width: 100%">
+	</div> -->
 	<div style="padding: 25px;font-family: sans-serif;font-size: 45px;">
-		What people think about fabRelax?
+		What people think about this product?
 	</div>
-
 	<div class="row">
-		<div class="col-lg-4" style="padding: 30px;">
-			<div class="DadStyle">
-				<h2>
-					Dr Meet Handa(AIIMS)
-				</h2>
-				<img src="images/aiims.png" width="350" height="350">
-				<br>
-				
-				<span style="font-size: 20px;">
-					"Perfect solution for chronic leg pain."
-				</span>
-				<br>
-			</div>
+		<div class="col-lg-6" style="padding: 30px 10px 30px 10px;">
+			<img src="images/e.gif" style="border-radius: 50%;" width="150" height="150">
+			<br>
+			Employer
+			<p style="font-size: 18px;color: blue;">
+				" It indeed feels like a real massage and I think <br>I have got the solution for my leg problem. "
+			</p>
 		</div>
-		<div class="col-lg-4" style="padding: 30px;">
-			<div class="DadStyle">
-				<h2>
-					Rita Singhal(Housewife)
-				</h2>
-				<img src="images/housewife.png" width="350" height="350">
-				<br>
-				
-				<span style="font-size: 20px;">
-					"Helped me get rid of cramps."
-				</span>
-				<br>
-			</div>
+		<div class="col-lg-6" style="padding: 30px 10px 30px 10px;">
+			<img src="images/i.jpg" style="border-radius: 50%;" width="150" height="150">
+			<br>
+			General Public
+			<p style="font-size: 18px;color: blue">
+				" This is amazing, I feel relaxed just after<br> one minute of usuage. Great Job."
+			</p>
 		</div>
-		<div class="col-lg-4" style="padding: 30px;">
-			<div class="DadStyle">
-				<h2>
-					Rishi(Athlete)
-				</h2>
-				<img src="images/howTo3a.png" width="300" height="350">
-				<br>
-				
-					<span style="font-size:20px;">
-						"It's useful in faster recovery after workout and avoids cramps too."
-					</span>
-				<br>
-			</div>
-		</div>
+		
 	</div>
+	
 </div>
 
 <div class="container-fluid"  style="text-align: center; font-size: 30px;">
